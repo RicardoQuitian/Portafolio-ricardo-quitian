@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portafolio Ricardo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+  <link rel="shortcut icon" href="icons/icon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="mode-blue">
+
+  <div class="mouse-light"></div>
+
+  <header class="header">
+    <div class="logo">RAQL</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#educacion">Educación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero section reveal active" id="inicio">
+    <h1 class="neon-title">Bienvenido</h1>
+    <h2 style="margin: 20px 0;">Soy Ricardo Alexander Quitian León</h2>
+    <p>Desarrollador apasionado por la tecnología y la innovación, desde que descubrí el mundo del desarrollo de software me he dedicado a aprender, experimentar y construir soluciones que resuelvan problemas reales.</p>
+    <br>
+    <p>Me motiva crear aplicaciones funcionales, creativas, bien diseñadas y sostenibles con el tiempo, combinando buenas prácticas de desarrollo enfocado en el usuario.</p>
+
+    
+    <div class="disc-container">
+      <div class="disc" onclick="toggleDisc()">
+        <div class="spin-ring"></div>
+        <div class="inner-ring"></div>
+        <div class="energy-lines"></div>
+        <div class="spark-group">
+          <div class="spark"></div>
+          <div class="spark"></div>
+        </div>
+      </div>
+      <p class="mensaje-disparo">Da clic... el otro lado te está esperando</p>
+    </div>
+  </section>
+
+  <section class="section reveal" id="sobre-mi">
+    <h2 class="neon-subtitle">Sobre Mí</h2>
+    <br>
+    <p>Soy un apasionado desarrollador de software con experiencia en la creación de aplicaciones web dinámicas y consultas SQL en bases de datos relacionales como PostgreSQL.</p>
+    <br>
+    <p>Domino herramientas de frontend como HTML, CSS y JavaScript, y tecnologías backend como Spring Boot y PostgreSQL.</p>
+    <br>
+    <p>Disfruto trabajar en equipo, explorar nuevas tecnologías y convertir ideas en soluciones reales mediante código limpio y eficiente.</p>
+    <br>
+    <p>Actualmente me especializo en el desarrollo de microservicios y proyectos que destaquen tanto por su diseño como por su funcionalidad.</p>
+  </section>
+
+  <div class="cv-button-container">
+    <a href="https://drive.google.com/file/d/1nJoZPZefAFSFvR8Q_32nkBOO6pIaZn23/view?usp=sharing" class="neon-btn" target="_blank" rel="noopener noreferrer">
+      📄 Ver Hoja de Vida
+    </a>
+  </div>
+
+  <section class="section reveal">
+    <h3 class="neon-subtitle">Habilidades Técnicas</h3>
+    <div class="skills-grid">
+      <div><strong>Frontend:</strong> HTML5, CSS3, JavaScript</div>
+      <div><strong>Backend:</strong> Java, PostgreSQL</div>
+      <div><strong>Framework:</strong> Spring Boot, Bootstrap, Postman, GitHub y GitLab</div>
+      <div><strong>Herramientas:</strong> Ezgif, Google Fonts</div>
+      <div><strong>IDEs y Entornos de Desarrollo:</strong> IntelliJ IDEA, Visual Studio Code, Postman</div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="tecnologias">
+    <h2 class="neon-subtitle">Tecnologías</h2>
+    <div class="tech-marquee-wrapper">
+      <div class="tech-marquee-track">
+        <img src="img/img_logo_html.png" />
+        <img src="img/img_logo_css.png" />
+        <img src="img/img_logo_js.png" />
+        <img src="img/img_logo_spring.png" />
+        <img src="img/img_logo_postgresql.png" />
+        <img src="img/img_logo_boostrap.png" />
+        <img src="img/img_logo-java.png" />
+        <img src="img/img_logo_postman.png" />
+        <img src="img/img_logo_github.png" />
+        <img src="img/img_logo_gitlab.png" />
+        <img src="img/img_logo_intellij_idea.png" />
+        <img src="img/img_logo_visual_code.png" />
+        <img src="img/img_logo_html.png" />
+        <img src="img/img_logo_css.png" />
+        <img src="img/img_logo_js.png" />
+        <img src="img/img_logo_spring.png" />
+        <img src="img/img_logo_postgresql.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="proyectos">
+    <h2 class="neon-subtitle">Proyectos Destacados</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <a href="proyecto.html">
+          <button class="project-btn">Ver proyectos</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="educacion">
+    <h2 class="neon-subtitle">Educación</h2>
+    <div class="edu-grid">
+      <div class="edu-item">
+        <img src="img/img_logo_politecnico.png" />
+        <p><strong>2025</strong><br>Ingeniería de Software</p>
+      </div>
+      <div class="edu-item">
+        <img src="img/img_logo_sena.png" />
+        <p><strong>2024</strong><br>Tecnólogo en Análisis y Desarrollo de Software</p>
+      </div>
+      <div class="edu-item">
+        <img src="img/img_logo_devf_protalento.png" />
+        <p><strong>2024</strong><br>Bootcamp Master in Coding</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section reveal" id="certificaciones">
+    <h2 class="neon-subtitle">Certificaciones Adicionales</h2>
+    <div class="cert-toggle">
+      <button class="neon-btn" onclick="toggleCerts('platzi')">📚 Ver Certificaciones Platzi</button>
+      <ul id="platziCerts" class="hidden">
+        <li>Fundamentos de Diseño de Interfaces UX/UI</li>
+        <br>
+        <li>Java Spring Data JPA: Bases de Datos</li>
+        <br>
+        <li>Java Spring</li>
+        <br>
+        <li>Java Spring Security: Autenticación y Seguridad Web </li>
+        <br>
+        <li>Funcionamiento de Java</li>
+        <br>
+        <li>Programación Funcional con Java SE</li>
+        <br>
+        <li>SQL práctico</li>
+        <br>
+        <li>PostgreSQL</li>
+        <br>
+        <li>Ciberseguridad para Desarrollo Web</li>
+        <br>
+        <li>HTML y CSS</li>
+        <br>
+        <li>React.js</li>
+        <br>
+        <li>Prueba Técnica: E-commerce Profesional con React.js</li>
+      </ul>
+      <button class="neon-btn" onclick="toggleCerts('sena')">🎓 Ver Certificaciones SENA</button>
+      <ul id="senaCerts" class="hidden">
+        <li>Seguridad Informática</li>
+        <br>
+        <li>Comportamiento Emprendedor</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="section footer reveal" id="contacto">
+    <h2 class="neon-subtitle">Contacto</h2>
+    <div class="contact-flex">
+      <span>📧 leonquitian2000@gmail.com</span>
+      <span>📱 3024109998</span>
+      <span>🔗 <a href="https://www.linkedin.com/in/ricardoalexanderquitianleon/">LinkedIn</a></span>
+      <span>💻 <a href="https://github.com/RicardoQuitian">GitHub</a></span>
+    </div>
+    <div class="tron-bike"></div>
+  </footer>
+</body>
+</html>
