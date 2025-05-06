@@ -120,6 +120,7 @@ img {
   justify-content: center;
   margin-top: 10px;
 }
+
 .neon-btn {
   background: none;
   border: 2px solid var(--color-neon);
@@ -131,8 +132,10 @@ img {
   transition: box-shadow 0.3s, transform 0.3s;
 }
 .neon-btn:hover {
-  box-shadow: 0 0 10px var(--color-shadow);
-  transform: scale(1.05);
+    background-color: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 15px var(--color-shadow), 0 0 30px var(--color-shadow);
+    transform: scale(1.08);
+    border-color: var(--color-neon);
 }
 
 .tech-marquee-wrapper {
@@ -182,8 +185,9 @@ img {
 
 .project-btn:hover {
   background-color: rgba(0, 255, 255, 0.1);
-  box-shadow: 0 0 12px var(--color-shadow);
-  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--color-shadow), 0 0 30px var(--color-shadow);
+  transform: scale(1.08);
+  border-color: var(--color-neon);
 }
 
 .project-detail-box {
@@ -201,6 +205,13 @@ img {
 
 .project-detail-box img:hover {
   transform: scale(1.1);
+}
+
+.project-detail-box p {
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .edu-grid {
@@ -377,6 +388,10 @@ body.mode-red .spin-ring {
     font-size: 0.95rem;
     padding: 0 10px;
   }
+  .project-detail-box img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .menu-toggle {
@@ -413,8 +428,11 @@ body.mode-red .spin-ring {
   }
 
   .header {
-    flex-wrap: wrap;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
   }
 }
 
@@ -461,4 +479,11 @@ body.mode-red .spin-ring {
   pointer-events: none;
   opacity: 0.6;
   filter: blur(2px);
+}
+
+.image-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px ;
 }
